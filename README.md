@@ -27,7 +27,8 @@ treeView-beta
       ⬥🗺️ sitemap.xml ## Supports `.xml`/`.ts`; placed in `app/` root
       ⬥🤖 robots.txt ## [Crawler Rules] Supports `.txt`/`.ts`; placed in `app/` root
       ⬥📱 manifest.json ## [Web App Manifest] Supports `.json`/`.ts`; placed in `app/` root
-      ⬦🔐 (auth)/ ## [Route Group] For organization only; omitted from the URL path
+      ⬦🔐 (auth)/ ## [Route Group] Organizes routes or scopes layouts; omitted from the URL path
+        ⬥🏛️ layout.tsx ## Scopes layout to subpages (also applies to `error.tsx` / `loading.tsx`, etc.) without exposing `(auth)` in the URL
         ⬦📁 login/
           ⬥🔑 page.tsx ## Maps to `/login`, not `/(auth)/login`
       ⬦📁 blog/

@@ -27,7 +27,8 @@ treeView-beta
       ⬥🗺️ sitemap.xml ## 支援 `.xml`/`.ts`，放在 `app/` 根目錄
       ⬥🤖 robots.txt ## [爬蟲規則] 支援 `.txt`/`.ts`，放在 `app/` 根目錄
       ⬥📱 manifest.json ## [Web App 清單] 支援 `.json`/`.ts`，放在 `app/` 根目錄
-      ⬦🔐 (auth)/ ## [路由群組] 整理目錄結構用，路由解析時直接跳過
+      ⬦🔐 (auth)/ ## [路由群組] 用於組織資料夾或切分獨立版型，網址中直接省略不呈現
+        ⬥🏛️ layout.tsx ## 無需在網址暴露 `(auth)` 路徑，為子頁面提供專屬版型 (同理適用於 `error.tsx` / `loading.tsx` 等)
         ⬦📁 login/
           ⬥🔑 page.tsx ## 對應網址為 `/login` 而不是 `/(auth)/login`
       ⬦📁 blog/
