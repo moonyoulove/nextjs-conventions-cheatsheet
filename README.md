@@ -59,7 +59,7 @@ treeView-beta
       ⬦📁 api/
         ⬦📁 users/
           ⬥🔌 route.ts ## [API Endpoint] Defines GET/POST for `/api/users` (cannot share folder with `page.tsx`)
-      ⬦🧩 _components/ ## [Private Folder] `_` prefix opts out of routing; stores shared components (buttons, navbars)
+      ⬦🧩 _components/ ## [Private Folder] Opts out of routing (folders without `page.tsx`/`route.ts` are also private by default)
         ⬦🧱 Button.tsx
     ⬥📡 instrumentation.ts ## [Server Telemetry] Runs at server startup; sets up tracing and backend metrics
     ⬥📡 instrumentation-client.ts ## [Client Telemetry] Runs post-load before interaction; tracks load errors and frontend performance

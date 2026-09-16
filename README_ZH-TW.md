@@ -59,7 +59,7 @@ treeView-beta
       ⬦📁 api/
         ⬦📁 users/
           ⬥🔌 route.ts ## [API 端點] 定義 `/api/users` 的 GET/POST 等方法 (不可以跟 UI 元件例如 `page.tsx` 放在同一個資料夾)
-      ⬦🧩 _components/ ## [私有資料夾] `_` 開頭的資料夾不參與路由，用於存放內部共用元件 (如按鈕、導航列)
+      ⬦🧩 _components/ ## [私有資料夾] 用 `_` 排除在路由之外 (未放 `page.tsx`/`route.ts` 的資料夾預設亦不會被公開)
         ⬦🧱 Button.tsx
     ⬥📡 instrumentation.ts ## [伺服端遙測監控] 服務啟動時執行，用於設定後端事件追蹤、指標
     ⬥📡 instrumentation-client.ts ## [客戶端遙測監控] 頁面載入後、使用者互動前執行，專門追蹤頁面載入錯誤與前端效能
